@@ -9,6 +9,58 @@
     <title>Talento TI</title>
 </head>
 <body>
+    <!-- Modals -->
+    <div class = "modals">
+      <div class="modal fade" id="singupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <h5>Correo Institucional:</h5>
+                <input type="text" placeholder="Ejem: L19021729@veracruz.tecnm.mx">
+                <h5>Numero de control:</h5>
+                <input type="text" placeholder="Ejem: E19021729">
+                <h5>Contraseña:</h5>
+                <input type="password" placeholder="Ejem: 123TecNm">
+                <h5>Confirma tu contraseña:</h5>
+                <input type="password" placeholder="Ejem: 123TecNm">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Inicio de sesion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <h5>Correo Institucional:</h5>
+                <input type="text" placeholder="Ejem: L19021729@veracruz.tecnm.mx">
+                <h5>Contraseña:</h5>
+                <input type="password" placeholder="Ejem: 123TecNm">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Iniciar sesion</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modals -->
     <header>
         <nav class="navBar">
             <div>
@@ -16,14 +68,135 @@
                 <h2>Talento_TI.org</h2>
             </div>
             <div class="contentNav">
-                <h3>Colaboradores</h3>
-                <h3>Proyectos</h3>
-                <h3>Registrarse</h3>
+              <button data-bs-toggle="modal" data-bs-target="#singupModal">Registrarse</button>
+              <h3>/</h3>
+              <button data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesion</button>
             </div>
         </nav>
     </header>
     <article>
-        
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/Presentacion.jpeg" alt="Presentacion">
+          </div>
+          <div class="carousel-item">
+            <img src="http://www.seduca.gov.co/images/images-noticias-2016/Talento-TI/INTERNA-TI-2017.jpg"  alt="Actividades">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rexidi.com/wp-content/uploads/2019/07/posiciones-TI@2x.png" alt="Contenido">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="description">
+        <h1>¿Quienes somos?</h1>
+        <p>
+          Somos un grupo estudiantil del la universidad del Tecnologico Nacional de Mexico campus Veracruz  en donde 
+          nuestra mision principal es mejorar la calidad de estudiantes y futuros ingenieros que saldran de nuestra
+          institucion, esto mediante el difundimiento de conocimiento acerca de las diversas tecnologias web, promoviendo
+          asi tambien el autodidactismo y la curiosidad de los estudiantes para la mejoria de su aprendizaje.
+        </p>
+      </div>
+      <h1>Representantes de la comunidad.</h1>
+      <div class="cardsContent">
+        <div class="card mb-5" style="width: 30vw;">
+          <div class="row g-0" style="height: 100%;">
+            <div class="col-md-4">
+              <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/TW5CHJTUY5B3DOS35VMOLZUVF4.jpg" class="imgCards" alt="TorreImg">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Dr.Torre Blanca</h5>
+                <p class="card-text">
+                  El Dr.Torre Blanca, un docente del instituto tecnologico de veracruz el cual fue de 
+                  principal importancia para el desarrollo y motivacion para la creacion de estas 
+                  comunidades, tambien autor del grupo de Programacion competitiva.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5" style="width: 30vw;">
+          <div class="row g-0" style="height: 100%;">
+            <div class="col-md-4">
+              <img src="https://www.kaizengroup.es/wp-content/uploads/bfi_thumb/stevejobsbig-35j7nynk8topdvfvsv3im8.jpg" class="imgCards" alt="EdwinImg">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Edwin</h5>
+                <p class="card-text">
+                  Estudiante del instituto tecnologico de veracruz de la carrera de sistemas computacionales
+                  autor y creador de la comunidad de desarrllo web en frontend.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5" style="width: 30vw;">
+          <div class="row g-0" style="height: 100%;">
+            <div class="col-md-4">
+              <img src="https://realestatemarket.com.mx/images/influencers/mark.jpg" class="imgCards" alt="GioImg">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Giovani Arellano</h5>
+                <p class="card-text">
+                  Estudiante del instituto tecnologico de veracruz de la carrera de sistemas computacionales
+                  autor y creador de la comunidad de desarrllo movil.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Descripcion de la pagina</h1>
+      <div class="description">
+        <p>
+          La principal funcion de esta pagina es el formar una comunidad la cual le interese aprender
+          acerca de las tecnologias de informacion, en donde la misma comunidad promovera el aprendizaje
+          con respeco a estas tecnologias, esta pagina tendra diferentes secciones dependiendo de las
+          tecnologias que esta comunidad implemente y enseñe. Tambien podras aportar informacion respecto a
+          estas tecnologias e inclusive aportar una nueva tecnlogia, unete a reuniones de aprendizaje,
+          proyectos, trabajos en equipo, practicas, talleres, y mucho mas que brindara nuestra comunidad.
+        </p>
+        <h2>Unete a nostros y comienza a sumergirte en el mundo de la TI</h2>
+        <button class="registerbtn" data-bs-toggle="modal" data-bs-target="#singupModal">Registrate ahora! :D</button>
+      </div>
     </article>
+    <footer>
+      <div>
+        <div class="footerOptions">
+          <img src="https://image.flaticon.com/icons/png/512/16/16642.png" alt="preguntasIcon">
+          <a>Preguntas frecuentes.</a>
+        </div>
+        <div class="footerOptions">
+          <img src="https://img.icons8.com/pastel-glyph/452/error--v3.png" alt="erroresIcon">
+          <a>Reportar errores.</a>
+        </div>
+        <div class="footerOptions">
+          <img src="https://cdn-icons-png.flaticon.com/512/0/697.png" alt="sugerenciasIcon">
+          <a>Sugerencias.</a>
+        </div>
+      </div>
+      <div class="contacts">
+        <img src="../img/iconFacebook.png" alt="Facebook contacto">
+        <img src="../img/iconGithub.png" alt="Github contacto">
+        <img src="../img/iconGmail.png" alt="Gmail contacto">
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
